@@ -51,7 +51,7 @@ console.log(functions_1_1.sortText(data_1_1.arrayCars));
 // => Output: true 
 // => Input: (‘Test’, ‘q’)
 // => Output: false
-let functions_1_2 = require('./modules/functions_1_2');
+let functions_1_2 = require('./modules/functions_1_2_lodash');
 let data_1_2 = require('./data/data_1_2');
 
 console.log('\nBackend: Node.js CodeFlow Übung lev1_2: import / export');
@@ -87,6 +87,25 @@ console.log(functions_1_2.uniqueArray(data_1_2.arr1));
 
 console.log('gib die Summe des Arrays zurück');
 console.log(functions_1_2.arrSum(data_1_2.arr1));
+
+console.log('die function bekommt zwei Parameter übergeben.Gib eine zufällige Zahl zurück, die zwischen diesen beiden liegt');
+console.log(functions_1_2.randomBetween(5, 10));
+
+console.log('Erstelle eine function, der ein String übergeben wird. Sie soll den ersten Buchstaben in einen Großbuchstaben umwandelt');
+console.log(functions_1_2.firstLetterToUpper("the quick brown fox..."));
+
+console.log('Erstelle eine function, der ein String übergeben wird. Sie soll den gesamten String in Großbuchstaben umwandeln');
+console.log(functions_1_2.stringToUpper("the quick brown fox..."));
+
+console.log('Erstelle eine function, mit zwei Parametern. Sie soll überprüfen ob der letzte Buchstabe von Parameter 1 mit dem Parameter 2 überein stimmt')
+console.log('=> Input: (‘Test’, ‘t’)');
+console.log('=> Output: true ');
+console.log(functions_1_2.firstEqualsLast("Test", "t"))
+
+console.log('=> Input: (‘Test’, ‘q’)');
+console.log('=> Output: false');
+console.log(functions_1_2.firstEqualsLast("Test", "q"))
+
 
 
 
